@@ -1,13 +1,15 @@
 /* Lets Start */
 * {
-    overflow-x: hidden;
+     box-sizing:border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    height: 400vh;
     background-color: burlywood;
+
+    /* Scroll behavior */
+    scroll-snap-type: y mandatory;
 }
 
 /* section */
@@ -17,6 +19,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container{
+    height:100vh;
+    overflow-y:scroll;
+    scroll-snap-type:y mandatory;
 }
 
 .page1 {
