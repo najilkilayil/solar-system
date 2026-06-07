@@ -1,4 +1,3 @@
-/* Lets start */
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +8,9 @@ body {
     background-color: burlywood;
     overflow-x: hidden;
     height: 400vh;
+    position: relative;
 }
 
-/* Heading text */
 .heading {
     width: 100%;
     height: 100vh;
@@ -26,7 +25,7 @@ body {
     font-size: 90px;
     color: white;
 
-    animation: change-head-p linear forwards;
+    animation: change_head_p linear forwards;
     animation-timeline: scroll();
     animation-range: 0vh 20vh;
 }
@@ -36,42 +35,206 @@ body {
     font-size: 50px;
     color: gray;    
     animation: down linear 0.5s infinite;
-    animation:  change-head-p linear forwards;
+    animation:  change_head_p linear forwards;
     animation-timeline: scroll();
     animation-range: 0vh 20vh;
 }
 
-/* ANIMATION SECTION */
-@keyframes down {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    25% {
-        opacity: 0.5;
-        transform: translateY(2px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    75% {
-        opacity: 0.5;
-        transform: translateY(-2px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-
-@keyframes change-head-p {
+@keyframes change_head_p {
     0% {
         transform: translateY(60px);
     }
 
     100% {
         opacity: 0;
+    }
+}
+
+.sections {
+    background-color: blueviolet;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+
+.sections_img {
+    width: 30%;
+    height: 100vh;
+    background: url(images/sun.jpg);
+    background-size: cover;
+    background-position: 140%;
+    background-repeat: no-repeat;
+    transform: translateX(-1000px);
+    opacity: 0;
+
+    animation: change_img linear forwards;
+    animation-timeline: scroll();
+    animation-range: 20vh 620vh;
+}
+
+@keyframes change_img {
+    
+    9.67% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+}
+.sections_text {
+    background-color: brown;
+    width: 70%;
+    height: 100vh;
+}
+
+.sections_text_head {
+    width: 100%;
+    height: 20vh;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.sections_text_p {
+    width: 100%;
+    height: 60vh;
+    background-color: darksalmon;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.sections_btn {
+    width: 100%;
+    height: 20vh;
+    background-color: deeppink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections_btn a {
+    text-decoration: none;
+    width: 250px;
+    height: 80px;
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+/* Lets start */
+
+h1#head_1 {
+    animation: head_1 linear forwards;
+    animation-timeline: scroll();
+    animation-range: 60vh 140vh;
+    opacity: 0;
+}
+
+p#head_p1 {
+    animation: head_1 linear forwards;
+    animation-timeline: scroll();
+    animation-range: 60vh 140vh;
+    opacity: 0;
+}
+
+@keyframes head_1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    5% {
+        opacity: 0.5;
+        transform: translateY(-70px);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    95% {
+        opacity: 0.5;
+        transform: translateY(70px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(140px);
+    }
+}
+
+.sections_text_p {
+    text-align: center;
+    font-size: 18px;
+    padding: 150px;
+    position: relative;
+}
+
+.sections_text_p p {
+    position: absolute;
+    padding-right: 100px;
+}
+
+p#p1 {
+    animation: head_1 linear forwards;
+    animation-timeline: scroll();
+    animation-range: 60vh 140vh;
+    opacity: 0;
+}
+
+p#p2 {
+    animation: head_1 linear forwards;
+    animation-timeline: scroll();
+    animation-range: 100vh 200vh;
+}
+
+.sections_btn {
+    position: relative;
+}
+
+.sections_btn a {
+    position: absolute;
+}
+
+a#btn1 {
+    background-color: black;
+    opacity: 0;
+    animation: show_text linear forwards;
+    animation-timeline: scroll();
+    animation-range: 40vh 140vh;
+}
+
+a#btn2 {
+    background-color: grey;
+    opacity: 0;
+    animation: hide_text linear forwards;
+    animation-timeline: scroll();
+    animation-range: 140vh 200vh;
+}
+
+@keyframes show_text {
+    10%, 90% {
+        opacity: 1;
+        z-index: 2;
+    }
+    100% {
+        opacity: 0;
+        z-index: 1;
+    }
+}
+@keyframes hide_text {
+    10%, 90% {
+        opacity: 1;
+        z-index: 2;
+    }
+    100% {
+        opacity: 0;
+        z-index: 1;
     }
 }
