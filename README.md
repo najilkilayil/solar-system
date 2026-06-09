@@ -6,6 +6,7 @@ The website brifly explain about each planet and its features and linking button
 Anyway this website is completely made only using HTML and CSS.
 
 The website used the perfect matching fonts that exported from *fonts.google.com* and colour patterns from *cssgradient.io*.
+Created my own equation on excel file to give correct values for the scrolling animation (attached to the file)
 
 Currenly the website is only collected the data of Sun, Mercury, Venus and Earth. The remaining planets will available soon as well as possible!
 
