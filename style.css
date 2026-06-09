@@ -7,7 +7,7 @@
 body {
     background-color: burlywood;
     overflow-x: hidden;
-    height: 400vh;
+    height: 1200vh;
     position: relative;
 }
 
@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: url(https://th.bing.com/th/id/OIP.h8cWaC_zvXENLttL-NtkrwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3);
     flex-direction: column;
 }
 
@@ -33,9 +33,9 @@ body {
 .heading p {
     padding-top: 50px;
     font-size: 50px;
-    color: gray;    
+    color: gray;
     animation: down linear 0.5s infinite;
-    animation:  change_head_p linear forwards;
+    animation: change_head_p linear forwards;
     animation-timeline: scroll();
     animation-range: 0vh 20vh;
 }
@@ -71,18 +71,102 @@ body {
 
     animation: change_img linear forwards;
     animation-timeline: scroll();
-    animation-range: 20vh 620vh;
+    animation-range: 20vh 920vh;
 }
 
 @keyframes change_img {
-    
-    9.67% {
+
+    6.12% {
         opacity: 1;
         transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
     }
 
+    16.32% {
+        background: url(images/sun.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
 
+    26.53% {
+        background: url(images/mercury.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
+
+    36.73% {
+        background: url(images/venus.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
+
+    46.93% {
+        background: url(images/earth.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
+
+    57.14% {
+        background: url(images/mars.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
+
+    67.34% {
+        background: url(images/jupiter.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
+
+    77.55% {
+        background: url(images/saturn.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
+
+    87.75% {
+        background: url(images/uranus.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
+
+    97.95%,
+    100% {
+        background: url(images/neptune.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
 }
+
 .sections_text {
     background-color: brown;
     width: 70%;
@@ -105,6 +189,7 @@ body {
     background-color: darksalmon;
     padding-left: 20px;
     text-align: justify;
+    max-width: 700px;
 }
 
 .sections_btn {
@@ -130,20 +215,46 @@ body {
     border: 2px solid black;
 }
 
-/* Lets start */
 
-h1#head_1 {
+#head_1,
+#head_2,
+#head_3,
+#head_4,
+#head_p1,
+#head_p2,
+#head_p3,
+#head_p4,
+#p1,
+#p2,
+#p3,
+#p4 {
     animation: head_1 linear forwards;
     animation-timeline: scroll();
-    animation-range: 60vh 140vh;
     opacity: 0;
 }
 
-p#head_p1 {
-    animation: head_1 linear forwards;
-    animation-timeline: scroll();
-    animation-range: 60vh 140vh;
-    opacity: 0;
+#head_1,
+#head_p1,
+#p1 {
+    animation-range: 60vh 180vh;
+}
+
+#head_2,
+#head_p2,
+#p2 {
+    animation-range: 160vh 280vh;
+}
+
+#head_3,
+#head_p3,
+#p3 {
+    animation-range: 260vh 380vh;
+}
+
+#head_4,
+#head_p4,
+#p4 {
+    animation-range: 360vh 480vh;
 }
 
 @keyframes head_1 {
@@ -151,18 +262,23 @@ p#head_p1 {
         opacity: 0;
         transform: translateY(-140px);
     }
+
     5% {
         opacity: 0.5;
         transform: translateY(-70px);
     }
-    10%, 90% {
+
+    10%,
+    90% {
         opacity: 1;
         transform: translateY(0);
     }
+
     95% {
         opacity: 0.5;
         transform: translateY(70px);
     }
+
     100% {
         opacity: 0;
         transform: translateY(140px);
@@ -176,22 +292,22 @@ p#head_p1 {
     position: relative;
 }
 
+.sections_text_head {
+    position: relative;
+}
+
+.sections_text_head h1,
+.sections_text_head p {
+    position: absolute;
+}
+
+.sections_text_head p {
+    padding-bottom: 80px;
+}
+
 .sections_text_p p {
     position: absolute;
     padding-right: 100px;
-}
-
-p#p1 {
-    animation: head_1 linear forwards;
-    animation-timeline: scroll();
-    animation-range: 60vh 140vh;
-    opacity: 0;
-}
-
-p#p2 {
-    animation: head_1 linear forwards;
-    animation-timeline: scroll();
-    animation-range: 100vh 200vh;
 }
 
 .sections_btn {
@@ -200,41 +316,60 @@ p#p2 {
 
 .sections_btn a {
     position: absolute;
-}
-
-a#btn1 {
-    background-color: black;
     opacity: 0;
-    animation: show_text linear forwards;
-    animation-timeline: scroll();
-    animation-range: 40vh 140vh;
+    pointer-events: none;
 }
 
-a#btn2 {
-    background-color: grey;
-    opacity: 0;
-    animation: hide_text linear forwards;
+#btn1,
+#btn2,
+#btn3,
+#btn4 {
+    animation: showBtn linear forwards;
     animation-timeline: scroll();
-    animation-range: 140vh 200vh;
 }
 
-@keyframes show_text {
-    10%, 90% {
-        opacity: 1;
-        z-index: 2;
+#btn1 {
+    animation-range: 60vh 180vh;
+}
+
+#btn2 {
+    animation-range: 160vh 280vh;
+}
+
+#btn3 {
+    animation-range: 260vh 380vh;
+}
+
+#btn4 {
+    animation-range: 360vh 480vh;
+}
+
+@keyframes showBtn {
+    0% {
+        transform: translateX(300px);
     }
+
+    10% {
+
+        opacity: 0.5;
+        pointer-events: auto;
+    }
+
+    30%,
+    80% {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    90% {
+        opacity: 0.5;
+        pointer-events: auto;
+    }
+
     100% {
         opacity: 0;
-        z-index: 1;
-    }
-}
-@keyframes hide_text {
-    10%, 90% {
-        opacity: 1;
-        z-index: 2;
-    }
-    100% {
-        opacity: 0;
-        z-index: 1;
+        pointer-events: none;
+        transform: translateX(-300px);
     }
 }
