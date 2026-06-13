@@ -243,19 +243,27 @@ body {
 #head_2,
 #head_3,
 #head_4,
+#head_5,
 #head_p1,
 #head_p2,
 #head_p3,
 #head_p4,
+#head_p5,
 #p1,
 #p2,
 #p3,
 #p4,
-#load_p5 {
+#p5,
+#load {
     animation: head_1 linear forwards;
     animation-timeline: scroll();
     opacity: 0;
 }
+
+#head_6, #head_7, #head_8, #head_9 {
+    opacity: 0;
+}
+
 
 #head_1,
 #head_p1,
@@ -281,13 +289,16 @@ body {
     animation-range: 360vh 480vh;
 }
 
-#load_p5 {
+#head_5, #head_p5, #p5 {
+    animation-range: 460vh 580vh;
+}
+
+#load {
     font-size: 50px;
     text-align: center;
     font-family: 'Audiowide', sans-serif;
-    animation-range: 460vh 1200vh;
+    animation-range: 560vh 1200vh;
 }
-
 @keyframes head_1 {
     0% {
         opacity: 0;
@@ -359,7 +370,8 @@ body {
 #btn1,
 #btn2,
 #btn3,
-#btn4 {
+#btn4,
+#btn5 {
     animation: showBtn linear forwards;
     animation-timeline: scroll();
 }
@@ -378,6 +390,10 @@ body {
 
 #btn4 {
     animation-range: 360vh 480vh;
+}
+
+#btn5 {
+    animation-range: 460vh 580vh;
 }
 
 @keyframes showBtn {
