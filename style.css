@@ -7,7 +7,7 @@
 body {
     background: linear-gradient(to right, #000000 0%, #000000 40%, #0B1020 70%, #1A1F35 100%);
     overflow-x: hidden;
-    height: 1200vh;
+    height: 1000vh;
     position: relative;
     color: white;
     user-select: none;
@@ -162,6 +162,14 @@ body {
     }
 
     97.95%,
+    99% {
+        background: url(images/neptune.jpg);
+        opacity: 1;
+        transform: translateX(0);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 140%;
+    }
     100% {
         background: url(images/neptune.jpg);
         opacity: 1;
@@ -244,26 +252,33 @@ body {
 #head_3,
 #head_4,
 #head_5,
+#head_6,
+#head_7,
+#head_8,
+#head_9,
 #head_p1,
 #head_p2,
 #head_p3,
 #head_p4,
 #head_p5,
+#head_p6,
+#head_p7,
+#head_p8,
+#head_p9,
 #p1,
 #p2,
 #p3,
 #p4,
 #p5,
+#p6,
+#p7,
+#p8,
+#p9,
 #load {
     animation: head_1 linear forwards;
     animation-timeline: scroll();
     opacity: 0;
 }
-
-#head_6, #head_7, #head_8, #head_9 {
-    opacity: 0;
-}
-
 
 #head_1,
 #head_p1,
@@ -293,11 +308,29 @@ body {
     animation-range: 460vh 580vh;
 }
 
+#head_6, #head_p6, #p6 {
+    animation-range: 560vh 680vh;
+}
+
+#head_7, #head_p7, #p7 {
+    animation-range: 660vh 780vh;
+}
+
+#head_8, #head_p8, #p8 {
+    animation-range: 760vh 880vh;
+}
+
+#head_9, #head_p9, #p9 {
+    animation-range: 860vh 980vh;
+}
+
 #load {
+    /*
     font-size: 50px;
     text-align: center;
     font-family: 'Audiowide', sans-serif;
-    animation-range: 560vh 1200vh;
+    animation-range: 560vh 1200vh; */
+    opacity: 0;
 }
 @keyframes head_1 {
     0% {
@@ -371,7 +404,11 @@ body {
 #btn2,
 #btn3,
 #btn4,
-#btn5 {
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9 {
     animation: showBtn linear forwards;
     animation-timeline: scroll();
 }
@@ -394,6 +431,22 @@ body {
 
 #btn5 {
     animation-range: 460vh 580vh;
+}
+
+#btn6 {
+    animation-range: 560vh 680vh;
+}
+
+#btn7 {
+    animation-range: 660vh 780vh;
+}
+
+#btn8 {
+    animation-range: 760vh 880vh;
+}
+
+#btn9 {
+    animation-range: 860vh 980vh;
 }
 
 @keyframes showBtn {
