@@ -34,3 +34,4 @@ So using a screen recorder i would like show how the website works on the edge.
 Anyway atlast this website currently is not screen responsive!
 
 IT is a hackclub project
+it is a macondo project.
