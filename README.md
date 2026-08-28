@@ -32,3 +32,5 @@ So using a screen recorder i would like show how the website works on the edge.
 [Video Link](https://drive.google.com/file/d/13ToydZzu8WnzNbCIZIpx8y5-9V7yKI7V/view)
 
 Anyway atlast this website currently is not screen responsive!
+
+IT is a hackclub project
